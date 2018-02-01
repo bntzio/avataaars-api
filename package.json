@@ -1,0 +1,9 @@
+{
+  "name": "avataaars-api",
+  "version": "0.1.0",
+  "description": "An Avataaars API",
+  "main": "index.js",
+  "repository": "git@github.com:bntzio/avataaars-api.git",
+  "author": "Enrique Benitez <hello@bntz.io>",
+  "license": "MIT"
+}
