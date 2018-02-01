@@ -16,7 +16,7 @@ const getRandom = (length) => {
   return Math.floor(Math.random() * length)
 }
 
-const generateRandomAvatar = () => {
+const generateRandomAvatar = (avatarType) => {
   const accessory = accessories[getRandom(accessories.length)]
   const facialHairStyle = facialHair[getRandom(facialHair.length)]
   const facialHairColor = facialHairColors[getRandom(facialHairColors.length)]
@@ -36,7 +36,7 @@ const generateRandomAvatar = () => {
     avatarStyle = 'Circle'
   }
 
-  return `https://avataaars.io/?avatarStyle=${avatarStyle}&topType=${topStyle}&accessoriesType=${accessory}&hairColor=${hairColor}&hatColor=${hatColor}&facialHairType=${facialHairStyle}&facialHairColor=${facialHairColor}&clotheType=${clothing}&clotheColor=${clothingColor}&graphicType=${clothingGraphic}&eyeType=${eyesStyle}&eyebrowType=${eyebrow}&mouthType=${mouthStyle}&skinColor=${skinStyle}`
+  return `https://avataaars.io/?avatarStyle=${avatarType || avatarStyle}&topType=${topStyle}&accessoriesType=${accessory}&hairColor=${hairColor}&hatColor=${hatColor}&facialHairType=${facialHairStyle}&facialHairColor=${facialHairColor}&clotheType=${clothing}&clotheColor=${clothingColor}&graphicType=${clothingGraphic}&eyeType=${eyesStyle}&eyebrowType=${eyebrow}&mouthType=${mouthStyle}&skinColor=${skinStyle}`
 }
 
 module.exports = { generateRandomAvatar }
