@@ -1,12 +1,13 @@
 const express = require('express')
 
-const { generateAvatar } = require('./middleware/generateAvatar')
+const { generateRandomAvatar } = require('./generator/generateAvatar')
 
 const app = express()
 const port = process.env.PORT || 3000
 
-app.get('/', generateAvatar, (req, res) => {
-  res.send('Helloooo! 👋')
+app.get('/', (req, res) => {
+  const avatar = generateRandomAvatar()
+  res.json({ url: avatar })
 })
 
 app.listen(port, () => {
