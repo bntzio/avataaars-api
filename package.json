@@ -1,20 +1,8 @@
 {
   "name": "avataaars-api",
   "version": "0.1.0",
-  "description": "An Avataaars API",
-  "main": "index.js",
+  "description": "An API for Avataaars",
   "repository": "git@github.com:bntzio/avataaars-api.git",
   "author": "Enrique Benitez <hello@bntz.io>",
-  "license": "MIT",
-  "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js"
-  },
-  "devDependencies": {
-    "nodemon": "^1.14.11",
-    "standard": "^10.0.3"
-  },
-  "dependencies": {
-    "express": "^4.16.2"
-  }
+  "license": "MIT"
 }

@@ -1,0 +1,6 @@
+{
+  "name": "avataaars-api",
+  "alias": ["avataaars.now.sh"],
+  "version": 2,
+  "builds": [{ "src": "api/**/*", "use": "@now/node" }]
+}
